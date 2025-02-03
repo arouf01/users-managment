@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      h1 {
+        color: #4caf50;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        color: #555;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        background: #ffffff;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        text-align: left;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease;
+      }
+
+      ul li:hover {
+        background-color: #f0f8ff;
+        transform: translateY(-2px);
+      }
+
+      strong {
+        color: #1e88e5;
+      }
+
+      a {
+        color: #0073e6;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome To My Demo Server</h1>
+    <p>
+      <strong>API Endpoint:</strong>
+      <a
+        href="https://expressjs-rest-api-without-database.onrender.com/users"
+        target="_blank"
+        >https://expressjs-rest-api-without-database.onrender.com/users</a
+      >
+    </p>
+    <ul>
+      <li><strong>GET:</strong> To get all the users.</li>
+      <li>
+        <strong>GET a User:</strong> To get a single user. Example:
+        <a href="#"
+          >https://expressjs-rest-api-without-database.onrender.com/users/<strong
+            >{id}</strong
+          ></a
+        >
+      </li>
+      <li>
+        <strong>POST:</strong> To create a new user. Send the data in the body
+        using the application/x-www-form-urlencoded format.
+      </li>
+      <li>
+        <strong>PUT:</strong> To update a user. Example:
+        <a href="#"
+          >https://expressjs-rest-api-without-database.onrender.com/users/<strong
+            >{id}</strong
+          ></a
+        >
+      </li>
+      <li>
+        <strong>DELETE:</strong> Delete a user. Example:
+        <a href="#"
+          >https://expressjs-rest-api-without-database.onrender.com/users/<strong
+            >{id}</strong
+          ></a
+        >
+      </li>
+    </ul>
+    <footer>
+      <p>Powered by ExpressJS | REST API Demo</p>
+    </footer>
+  </body>
+</html>
